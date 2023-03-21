@@ -53,7 +53,8 @@ This function should only modify configuration layer settings."
      ;; spell-checking
      syntax-checking
      version-control
-     treemacs)
+     treemacs
+     compleseus)
 
 
    ;; List of additional packages that will be installed without being wrapped
@@ -66,7 +67,8 @@ This function should only modify configuration layer settings."
    ;; Also include the dependencies as they will not be resolved automatically.
    dotspacemacs-additional-packages
    '(
-     nyan-mode)
+     nyan-mode
+     consult-ghq)
 
    ;; A list of packages that cannot be updated.
    dotspacemacs-frozen-packages '()
