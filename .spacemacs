@@ -581,7 +581,7 @@ before packages are loaded."
 
   (setq nyan-animate-nyancat t)
   (setq nyan-wavy-trail t)
-  (setq nyan-animation-frame-interval 0.05)
+  (setq nyan-animation-frame-interval 0.2)
   (nyan-mode)
 )
 
