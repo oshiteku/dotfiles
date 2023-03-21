@@ -573,6 +573,9 @@ This function is called at the very end of Spacemacs startup, after layer
 configuration.
 Put your configuration code here, except for variables that should be set
 before packages are loaded."
+  (global-set-key (kbd "C-h") 'delete-backward-char)
+  (global-set-key (kbd "C-s") 'consult-line)
+  (setq mac-command-modifier 'meta)
 )
 
 
