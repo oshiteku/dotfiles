@@ -555,7 +555,6 @@ This function is called immediately after `dotspacemacs/init', before layer
 configuration.
 It is mostly for variables that should be set before packages are loaded.
 If you are unsure, try setting them in `dotspacemacs/user-config' first."
-  (setq nyan-wavy-trail t)
 )
 
 
@@ -576,6 +575,11 @@ before packages are loaded."
   (global-set-key (kbd "C-h") 'delete-backward-char)
   (global-set-key (kbd "C-s") 'consult-line)
   (setq mac-command-modifier 'meta)
+
+  (setq nyan-animate-nyancat t)
+  (setq nyan-wavy-trail t)
+  (setq nyan-animation-frame-interval 0.05)
+  (nyan-mode)
 )
 
 
