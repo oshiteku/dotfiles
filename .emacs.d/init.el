@@ -172,6 +172,7 @@
 (leaf skk
   :ensure ddskk
   :custom ((default-input-method . "japanese-skk"))
+  :bind (("C-x C-j" . skk-mode))
   :config
   (leaf ddskk-posframe
     :ensure t
