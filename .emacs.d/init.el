@@ -132,6 +132,17 @@
 
 
 ;;
+;; Style
+
+(leaf font
+  :config
+  (set-language-environment "Japanese")
+  (set-face-attribute 'default nil :family "UDEV Gothic 35NF" :height 120))
+
+;; ここに全角スペース → 　
+
+
+;;
 ;; keymap
 
 ;; なぜか leaf.el 側の設定が有効にならないのでベタ書き
