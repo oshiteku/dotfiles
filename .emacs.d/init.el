@@ -143,6 +143,24 @@
 
 
 ;;
+;; fido
+
+(fido-vertical-mode +1)
+
+(leaf marginalia
+  :ensure t
+  :config
+  (marginalia-mode))
+
+(leaf orderless
+  :ensure t
+  :init
+  (icomplete-mode)
+  :custom
+  (completion-styles . '(orderless)))
+
+
+;;
 ;; keymap
 
 ;; なぜか leaf.el 側の設定が有効にならないのでベタ書き
