@@ -169,6 +169,25 @@
 
 
 ;;
+;; git
+
+(leaf magit
+  :ensure t)
+
+(leaf git-gutter
+  :ensure t
+  :custom
+  ;; (git-gutter:modified-sign . "=")
+  ;; (git-gutter:added-sign . "+")
+  ;; (git-gutter:deleted-sign . "-")
+  :config
+  (global-git-gutter-mode +1)
+  (set-face-background 'git-gutter:modified "purple")
+  (set-face-background 'git-gutter:added "green")
+  (set-face-background 'git-gutter:deleted "red"))
+
+
+;;
 ;; end of init.el
 
 (provide 'init)
