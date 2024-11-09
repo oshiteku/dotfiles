@@ -151,6 +151,24 @@
 
 
 ;;
+;; migemo
+
+(leaf migemo
+  :ensure t
+  :require t
+  :defun
+  (migemo-init)
+  :custom
+  ;; TODO: macOS
+  (migemo-dictionary . "/usr/share/cmigemo/utf-8/migemo-dict")
+  (migemo-user-dictionary . nil)
+  (migemo-regex-dictionary . nil)
+  (migemo-coding-system . 'utf-8-unix)
+  :config
+  (migemo-init))
+
+
+;;
 ;; end of init.el
 
 (provide 'init)
