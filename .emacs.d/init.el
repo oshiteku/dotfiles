@@ -147,6 +147,9 @@
   (minimap-window-location . 'right)
   (minimap-minimum-width . 20))
 
+(leaf treemacs
+  :ensure t)
+
 
 ;;
 ;; Mode Line
