@@ -131,7 +131,7 @@
 
 
 ;;
-;; Style
+;; Style, UI
 
 (leaf font
   :config
@@ -139,6 +139,13 @@
   (set-face-attribute 'default nil :family "UDEV Gothic 35NF" :height 120))
 
 ;; ここに全角スペース → 　
+
+(leaf minimap
+  :ensure t
+  :bind (("C-x m" . minimap-mode))
+  :custom
+  (minimap-window-location . 'right)
+  (minimap-minimum-width . 20))
 
 
 ;;
