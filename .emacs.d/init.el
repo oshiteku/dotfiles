@@ -198,8 +198,9 @@
 
 
 ;;
-;; SKK (https://emacs-jp.github.io/packages/ddskk-posframe)
+;; Input Method
 
+;; SKK (https://emacs-jp.github.io/packages/ddskk-posframe)
 (leaf skk
   :ensure ddskk
   :custom ((default-input-method . "japanese-skk"))
@@ -208,6 +209,10 @@
   (leaf ddskk-posframe
     :ensure t
     :global-minor-mode t))
+
+(leaf emojify
+  :ensure t
+  :global-minor-mode t)
 
 
 ;;
