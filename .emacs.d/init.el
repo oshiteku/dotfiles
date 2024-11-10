@@ -172,7 +172,16 @@
 ;;
 ;; Minibuffer
 
-(fido-vertical-mode +1)
+(leaf vertico
+  :ensure t
+  :custom
+  (vertico-count . 20)
+  (vertico-resize . t)
+  :global-minor-mode t)
+
+(leaf savehist
+  :ensure t
+  :global-minor-mode t)
 
 (leaf marginalia
   :ensure t
@@ -184,7 +193,8 @@
   :init
   (icomplete-mode)
   :custom
-  (completion-styles . '(orderless)))
+  (completion-styles . '(orderless basic))
+  (completion-category-overrides '((file (styles partial-completion)))))
 
 (leaf which-key
   :global-minor-mode t)
