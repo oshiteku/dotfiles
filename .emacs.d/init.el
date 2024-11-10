@@ -259,6 +259,13 @@
   :ensure t
   :global-minor-mode global-undo-tree-mode)
 
+(leaf markdown-mode
+  :ensure t
+  :mode ("\\.md\\'" . gfm-mode)
+  :custom
+  (markdown-fontify-code-blocks-natively . t)
+  (markdown-header-scaling . t))
+
 
 ;;
 ;; LLM
