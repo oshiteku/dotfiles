@@ -142,6 +142,24 @@
 
 
 ;;
+;; Mode Line
+
+(leaf doom-modeline
+  :ensure t
+  :global-minor-mode t)
+
+(leaf display-battery
+  :global-minor-mode t)
+
+(leaf nyan-mode
+  :ensure t
+  :global-minor-mode t
+  :custom
+  (nyan-animate-nyancat . t)
+  (nyan-wavy-trail . t))
+
+
+;;
 ;; Minibuffer
 
 (fido-vertical-mode +1)
