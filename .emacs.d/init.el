@@ -256,6 +256,13 @@
 
 
 ;;
+;; LLM
+
+(leaf gptel
+  :ensure t)
+
+
+;;
 ;; end of init.el
 
 (provide 'init)
