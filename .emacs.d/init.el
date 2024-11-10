@@ -217,6 +217,14 @@
 
 
 ;;
+;; Coding
+
+(leaf undo-tree
+  :ensure t
+  :global-minor-mode global-undo-tree-mode)
+
+
+;;
 ;; end of init.el
 
 (provide 'init)
