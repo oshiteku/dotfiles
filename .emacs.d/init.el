@@ -142,7 +142,7 @@
 
 
 ;;
-;; fido
+;; Minibuffer
 
 (fido-vertical-mode +1)
 
@@ -157,6 +157,9 @@
   (icomplete-mode)
   :custom
   (completion-styles . '(orderless)))
+
+(leaf which-key
+  :global-minor-mode t)
 
 
 ;;
