@@ -206,6 +206,8 @@
 ;; なぜか leaf.el 側の設定が有効にならないのでベタ書き
 (keyboard-translate ?\C-h ?\C-?)
 
+(when (equal system-type 'darwin)
+  (setq mac-command-modifier 'meta))
 
 ;;
 ;; Input Method
