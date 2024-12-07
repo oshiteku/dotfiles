@@ -133,6 +133,8 @@
 ;;
 ;; Style, UI
 
+(load-theme 'modus-operandi-tinted)
+
 (leaf spacious-padding
   :ensure t
   :global-minor-mode t
