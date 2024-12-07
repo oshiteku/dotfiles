@@ -274,7 +274,9 @@
   (migemo-init)
   :custom
   ;; TODO: macOS
-  (migemo-dictionary . "/usr/share/cmigemo/utf-8/migemo-dict")
+  `(migemo-dictionary . ,(seq-find #'file-exists-p
+                                   '( "/usr/share/cmigemo/utf-8/migemo-dict"
+                                      "/usr/share/migemo/utf-8/migemo-dict")))
   (migemo-user-dictionary . nil)
   (migemo-regex-dictionary . nil)
   (migemo-coding-system . 'utf-8-unix)
