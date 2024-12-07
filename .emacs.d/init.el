@@ -300,6 +300,14 @@
   (set-face-background 'git-gutter:added "green")
   (set-face-background 'git-gutter:deleted "red"))
 
+;;
+;;
+;; Projectile
+
+(leaf projectile
+  :ensure t
+  :global-minor-mode t)
+
 
 ;;
 ;; Coding
