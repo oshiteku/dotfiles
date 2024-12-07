@@ -147,6 +147,15 @@
        :fringe-width 8))
    (spacious-padding-subtle-mode-line . `( :mode-line-active 'default
                                            :mode-line-inactive vertical-border))))
+
+(leaf golden-ratio
+  :ensure t
+  :global-minor-mode t)
+
+(leaf solaire-mode
+  :ensure t
+  :global-minor-mode t)
+
 (leaf font
   :config
   (set-language-environment "Japanese")
