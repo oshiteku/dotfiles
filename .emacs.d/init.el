@@ -292,6 +292,10 @@
   (markdown-fontify-code-blocks-natively . t)
   (markdown-header-scaling . t))
 
+(leaf writeroom-mode
+  :ensure t
+  :bind (("C-x w" . writeroom-mode)))
+
 
 ;;
 ;; LLM
