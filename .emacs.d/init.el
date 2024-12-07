@@ -177,6 +177,18 @@
 
 
 ;;
+;;
+;; Dashboard
+
+(leaf dashboard
+  :ensure t
+  :custom
+  ((dashboard-startup-banner . 'logo))
+  :config
+  (dashboard-setup-startup-hook))
+
+
+;;
 ;; Mode Line
 
 (leaf doom-modeline
