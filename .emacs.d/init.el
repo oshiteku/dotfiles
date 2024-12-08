@@ -312,6 +312,13 @@
 
 
 ;;
+;; Terminal Emulator
+
+(leaf vterm
+  :ensure t)
+
+
+;;
 ;; Coding
 
 (leaf undo-tree
