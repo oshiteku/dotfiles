@@ -335,6 +335,14 @@
   (markdown-fontify-code-blocks-natively . t)
   (markdown-header-scaling . t))
 
+(leaf rust-mode
+  :ensure t
+  :custom
+  (rust-format-on-save . t)
+  :config
+  (add-hook 'rust-mode-hook
+            (lambda () (prettify-symbols-mode))))
+
 (leaf writeroom-mode
   :ensure t
   :bind (("C-x w" . writeroom-mode)))
