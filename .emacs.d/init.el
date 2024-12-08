@@ -133,7 +133,10 @@
 ;;
 ;; Style, UI
 
-(load-theme 'modus-operandi-tinted)
+(leaf modus-themes
+  :ensure t
+  :config
+  (load-theme 'modus-operandi-tinted :no-confirm))
 
 (leaf spacious-padding
   :ensure t
